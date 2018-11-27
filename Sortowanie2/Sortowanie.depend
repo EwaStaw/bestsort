@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1543358060 source:c:\users\toshiba\desktop\sortowanie\sortowanie2\main2.c
+	<stdlib.h>
+	<math.h>
+	<stdio.h>
+	<time.h>
+

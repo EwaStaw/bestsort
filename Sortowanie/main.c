@@ -43,7 +43,7 @@ int main (int argc, char *argv[])
 
   // Alokacja pamieci na tablice o zmiennym rozmiarze
   dynamic_elements = malloc(num_elements * sizeof(int));
-  elements = static_elements;
+  //elements = static_elements;
   elements = dynamic_elements;
 
   // Zaplodnic generator liczb pseudolosowych czasem
@@ -77,8 +77,8 @@ int main (int argc, char *argv[])
       elements[krok] = elements[min_index];
       elements[min_index] = buff;
     }
-  //printf("Krok[%02d]: ", krok); for (int i=0; i < num_elements; i++) { printf("%02d ", elements[i]); } printf("\n");
-  //for (int i=0; i < 3*krok+11; i++) printf(" ");printf("^\n");
+  printf("Krok[%02d]: ", krok); for (int i=0; i < num_elements; i++) { printf("%02d ", elements[i]); } printf("\n");
+  for (int i=0; i < 3*krok+11; i++) printf(" ");printf("^\n");
   }
 
   printf("\nElements[%d]: ", num_elements); for (int i=0; i < num_elements; i++) { printf("%d ", elements[i]); } printf("\n\n");
